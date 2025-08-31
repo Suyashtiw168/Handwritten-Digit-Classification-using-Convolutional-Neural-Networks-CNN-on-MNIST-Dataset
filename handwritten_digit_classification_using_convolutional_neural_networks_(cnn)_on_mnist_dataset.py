@@ -43,7 +43,7 @@ history = model.fit(X_train, y_train, epochs=5, validation_data=(X_test, y_test)
 
 # Evaluate on test data
 test_loss, test_acc = model.evaluate(X_test, y_test, verbose=2)
-print("\n✅ Test Accuracy:", test_acc)
+print("\n Test Accuracy:", test_acc)
 
 # Plot training history
 plt.plot(history.history['accuracy'], label='train accuracy')
